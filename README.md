@@ -35,7 +35,7 @@ docker run -p 80:8080 -e SWAGGER_JSON=/foo/swagger.json -v /bar:/foo swaggerapi/
 Cleaner approach, as docker compose will clean up after us when we're done. Docker images will remain, especially when we forgot to clean up after ourselves.
 ```bash
 # Run the example
-docker-compose up -f $WSCODE_BASE_DIR/open_api/docker-composer.yml
+docker-compose -f $WSCODE_BASE_DIR/open_api/docker-compose.yml up 
 ```
 
 On the other hand, you may have your own swagger API that you want to view or edit.
